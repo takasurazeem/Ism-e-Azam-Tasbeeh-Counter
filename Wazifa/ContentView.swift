@@ -10,45 +10,39 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("fontSize") private var fontSize = 16.0
     @AppStorage("count") private var count = 0
+    @AppStorage("counterSize") private var counterSize = 0
     @AppStorage("darkMode") private var darkMode = true
     @State private var showingConfirmation = false
-
+    @State private var showingConfirmMinus = false
+    
     var body: some View {
         NavigationView {
             VStack {
-                Stepper("Font size", value: $fontSize)
+                configurationVStack
                 Spacer()
-                Text(
-                    """
-بسم الله الرحمن الرحيم
- ألم الله لا اله إلا هو الحي القيوم يا واحد يا ذَا الْجَلَالِ وَالْاِکْرَام
-"""
-                )
-                .font(.system(size: fontSize))
-                .environment(\.layoutDirection, .rightToLeft)
-                
+                tasbeeh
                 Spacer()
-                Text("\(count)")
-                    .bold()
-                    .foregroundColor(.gray)
-                    .font(.system(size: 32 * 2))
+                tasbeehCounter
                 HStack {
-                    Button("Increment") {
-                        count += 1
-                    }
-                    .buttonModifier()
-                    Spacer()
-                    Button("Decrement", role: .destructive) {
-                        count -= 1
+                    Button(role: .destructive) {
+                        showingConfirmMinus.toggle()
+                    } label: {
+                        Image(systemName: "minus.square")
                     }
                     .buttonStyle(.borderedProminent)
-                    Spacer()
                     
-                    Button("Plus 15") {
-                        count += 15
+                    Spacer()
+                    Text("\(counterSize)")
+                    Spacer()
+                    Button {
+                        count += counterSize
+                    } label: {
+                        Image(systemName: "plus.square")
                     }
-                    .buttonModifier()
+                    .buttonStyle(.borderedProminent)
                 }
+                .padding(.top, 2)
+                .font(.system(size: 30))
             }
             .navigationBarItems(
                 leading: Button(action: {
@@ -61,21 +55,61 @@ struct ContentView: View {
                         showingConfirmation = true
                     } label: {
                         Image(systemName: "arrow.clockwise.circle.fill")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.red)
                     }
             )
             .padding(.horizontal)
             .navigationTitle("Wazifa")
-            .confirmationDialog("Reset Counter", isPresented: $showingConfirmation) {
+            .alert("Are you sure you want to reset the counter?", isPresented: $showingConfirmation) {
                 Button("Yes", role: .destructive) {
                     count = 0
                 }
                 Button("No", role: .cancel) { }
-            } message: {
-                Text("Are you sure you want to reset the counter?")
             }
+            .alert("Are you sure you want to minus \(counterSize)", isPresented: $showingConfirmMinus, actions: {
+                Button("Yes", role: .destructive) {
+                    count -= counterSize
+                }
+                Button("No", role: .cancel) { }
+            })
         }
         .environment(\.colorScheme, darkMode ? .dark : .light)
+    }
+    
+    var tasbeehCounter: some View {
+        Text("\(count)")
+            .bold()
+            .foregroundColor(.gray)
+            .font(.system(size: 32 * 2))
+    }
+    
+    var tasbeeh: some View {
+        Text(
+            """
+بسم الله الرحمن الرحيم
+ألم الله لا اله إلا هو الحي القيوم يا واحد يا ذَا الْجَلَالِ وَالْاِکْرَام
+"""
+        )
+        .font(.system(size: fontSize))
+        .environment(\.layoutDirection, .rightToLeft)
+        
+    }
+    
+    var configurationVStack: some View {
+        VStack(spacing: 20) {
+            Stepper("Font size: \(Int(fontSize))", value: $fontSize)
+            HStack {
+                Menu ("Counter Size") {
+                    Picker("Counter size", selection: $counterSize) {
+                        ForEach([1, 3, 15], id: \.self) { counter in
+                            Text("\(counter)")
+                        }
+                    }
+                }
+                Spacer()
+                Text("\(counterSize)")
+            }
+        }
     }
 }
 
