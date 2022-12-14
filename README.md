@@ -11,19 +11,19 @@ Above written First Ayat of Surah Aal e Imran is combined with Ya Wahid, Ya Zal 
 #### Light Mode
 <table>
   <tr>
-    <td><img src="screenshots/lightmode/lightmode-1.png" width=90% height=90%></td>
-    <td><img src="screenshots/lightmode/lightmode-2.png" width=90% height=90%></td>
-    <td><img src="screenshots/lightmode/lightmode-3.png" width=90% height=90%></td>
-    <td><img src="screenshots/lightmode/lightmode-4.png" width=90% height=90%></td>
+    <td><img src="screenshots/lightmode/lightmode-1.png" width=100% height=100%></td>
+    <td><img src="screenshots/lightmode/lightmode-2.png" width=100% height=100%></td>
+    <td><img src="screenshots/lightmode/lightmode-3.png" width=100% height=100%></td>
+    <td><img src="screenshots/lightmode/lightmode-4.png" width=100% height=100%></td>
   </tr>
 </table>
 
 #### Dark Mode
 <table>
   <tr>
-    <td><img src="screenshots/darkmode/darkmode-1.png" width=90% height=90%></td>
-    <td><img src="screenshots/darkmode/darkmode-2.png" width=90% height=90%></td>
-    <td><img src="screenshots/darkmode/darkmode-3.png" width=90% height=90%></td>
-    <td><img src="screenshots/darkmode/darkmode-4.png" width=90% height=90%></td>
+    <td><img src="screenshots/darkmode/darkmode-1.png" width=100% height=100%></td>
+    <td><img src="screenshots/darkmode/darkmode-2.png" width=100% height=100%></td>
+    <td><img src="screenshots/darkmode/darkmode-3.png" width=100% height=100%></td>
+    <td><img src="screenshots/darkmode/darkmode-4.png" width=100% height=100%></td>
   </tr>
 </table>
