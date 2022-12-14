@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("fontSize") private var fontSize = 16.0
     @AppStorage("count") private var count = 0
-    @AppStorage("counterSize") private var counterSize = 0
+    @AppStorage("counterSize") private var counterSize = 15
     @AppStorage("darkMode") private var darkMode = true
     @State private var showingConfirmation = false
     @State private var showingConfirmMinus = false
