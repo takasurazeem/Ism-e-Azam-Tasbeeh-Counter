@@ -68,7 +68,11 @@ struct ContentView: View {
             }
             .alert("Are you sure you want to minus \(counterSize)", isPresented: $showingConfirmMinus, actions: {
                 Button("Yes", role: .destructive) {
-                    count -= counterSize
+                    if count < counterSize {
+                        count = 0
+                    } else {
+                        count -= counterSize
+                    }
                 }
                 Button("No", role: .cancel) { }
             })
