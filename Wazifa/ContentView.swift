@@ -101,7 +101,7 @@ struct ContentView: View {
             HStack {
                 Menu ("Counter Size") {
                     Picker("Counter size", selection: $counterSize) {
-                        ForEach([1, 3, 15], id: \.self) { counter in
+                        ForEach([1, 3, 13, 15], id: \.self) { counter in
                             Text("\(counter)")
                         }
                     }
