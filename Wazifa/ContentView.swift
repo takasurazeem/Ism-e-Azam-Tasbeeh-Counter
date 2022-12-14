@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("fontSize") private var fontSize = 16.0
     @AppStorage("count") private var count = 0
+    @AppStorage("darkMode") private var darkMode = true
     @State private var showingConfirmation = false
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -50,6 +51,11 @@ struct ContentView: View {
                 }
             }
             .navigationBarItems(
+                leading: Button(action: {
+                    darkMode.toggle()
+                }, label: {
+                    Image(systemName: darkMode ? "moon.circle.fill" : "moon.circle")
+                }),
                 trailing:
                     Button {
                         showingConfirmation = true
@@ -69,6 +75,7 @@ struct ContentView: View {
                 Text("Are you sure you want to reset the counter?")
             }
         }
+        .environment(\.colorScheme, darkMode ? .dark : .light)
     }
 }
 
