@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/takasurazeem/ism-e-azam-tasbeeh-counter/badge)](https://www.codefactor.io/repository/github/takasurazeem/ism-e-azam-tasbeeh-counter)
+
 # Ism-e-Azam-Tasbeeh-Counter
 Referece Video: https://youtu.be/9tNdMBUr07A?t=462
 
