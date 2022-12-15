@@ -18,7 +18,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                configurationVStack
+                Stepper("Font size: \(Int(fontSize))", value: $fontSize)
+                    .padding(.top, 4)
                 Spacer()
                 tasbeeh
                 Spacer()
@@ -32,7 +33,19 @@ struct ContentView: View {
                     .buttonStyle(.borderedProminent)
                     
                     Spacer()
-                    Text("\(counterSize)")
+                    Menu {
+                        Picker(selection: $counterSize) {
+                            ForEach([1, 3, 13, 15], id: \.self) { counter in
+                                Text("\(counter)")
+                            }
+                        } label: { }
+                    } label: {
+                        Button("\(counterSize)") {}
+                            .buttonStyle(.borderedProminent)
+                            .font(.system(size: 36))
+                            .fontWeight(.medium)
+                            
+                    }
                     Spacer()
                     Button {
                         count += counterSize
@@ -98,40 +111,10 @@ struct ContentView: View {
         .environment(\.layoutDirection, .rightToLeft)
         
     }
-    
-    var configurationVStack: some View {
-        VStack(spacing: 20) {
-            Stepper("Font size: \(Int(fontSize))", value: $fontSize)
-            HStack {
-                Menu ("Counter Size") {
-                    Picker("Counter size", selection: $counterSize) {
-                        ForEach([1, 3, 13, 15], id: \.self) { counter in
-                            Text("\(counter)")
-                        }
-                    }
-                }
-                Spacer()
-                Text("\(counterSize)")
-            }
-        }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-extension View {
-    func buttonModifier() -> some View {
-        self
-            .foregroundColor(.white)
-            .bold()
-            .font(.system(size: 20))
-            .padding(.horizontal)
-            .frame(height: 50)
-            .background(.green)
-            .cornerRadius(12)
     }
 }
