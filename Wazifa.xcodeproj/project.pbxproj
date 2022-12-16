@@ -11,14 +11,53 @@
 		F90EF15229478CD8007C45FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90EF15129478CD8007C45FD /* ContentView.swift */; };
 		F90EF15429478CD9007C45FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90EF15329478CD9007C45FD /* Assets.xcassets */; };
 		F90EF15729478CD9007C45FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90EF15629478CD9007C45FD /* Preview Assets.xcassets */; };
+		F91D05CA294B92D4000B7114 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D05C9294B92D4000B7114 /* WidgetKit.framework */; };
+		F91D05CC294B92D4000B7114 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D05CB294B92D4000B7114 /* SwiftUI.framework */; };
+		F91D05CF294B92D4000B7114 /* Ism_e_AzamBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D05CE294B92D4000B7114 /* Ism_e_AzamBundle.swift */; };
+		F91D05D1294B92D4000B7114 /* Ism_e_Azam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D05D0294B92D4000B7114 /* Ism_e_Azam.swift */; };
+		F91D05D3294B92D6000B7114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D05D2294B92D6000B7114 /* Assets.xcassets */; };
+		F91D05D7294B92D6000B7114 /* Ism-e-AzamExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F91D05C7294B92D4000B7114 /* Ism-e-AzamExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F91D05D5294B92D6000B7114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F90EF14429478CD8007C45FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91D05C6294B92D4000B7114;
+			remoteInfo = "Ism-e-AzamExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F91D05D8294B92D6000B7114 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F91D05D7294B92D6000B7114 /* Ism-e-AzamExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F90EF14C29478CD8007C45FD /* Wazifa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wazifa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90EF14F29478CD8007C45FD /* WazifaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WazifaApp.swift; sourceTree = "<group>"; };
 		F90EF15129478CD8007C45FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F90EF15329478CD9007C45FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F90EF15329478CD9007C45FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Wazifa/Assets.xcassets; sourceTree = "<group>"; };
 		F90EF15629478CD9007C45FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F91D05C7294B92D4000B7114 /* Ism-e-AzamExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ism-e-AzamExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91D05C9294B92D4000B7114 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F91D05CB294B92D4000B7114 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F91D05CE294B92D4000B7114 /* Ism_e_AzamBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ism_e_AzamBundle.swift; sourceTree = "<group>"; };
+		F91D05D0294B92D4000B7114 /* Ism_e_Azam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ism_e_Azam.swift; sourceTree = "<group>"; };
+		F91D05D2294B92D6000B7114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F91D05D4294B92D6000B7114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91D05DC294B9C6D000B7114 /* Ism-e-AzamExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ism-e-AzamExtension.entitlements"; sourceTree = "<group>"; };
+		F91D05DD294B9C8F000B7114 /* Wazifa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wazifa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,13 +68,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F91D05C4294B92D4000B7114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D05CC294B92D4000B7114 /* SwiftUI.framework in Frameworks */,
+				F91D05CA294B92D4000B7114 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F90EF14329478CD8007C45FD = {
 			isa = PBXGroup;
 			children = (
+				F91D05DC294B9C6D000B7114 /* Ism-e-AzamExtension.entitlements */,
 				F90EF14E29478CD8007C45FD /* Wazifa */,
+				F91D05CD294B92D4000B7114 /* Ism-e-Azam */,
+				F91D05C8294B92D4000B7114 /* Frameworks */,
 				F90EF14D29478CD8007C45FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F90EF14C29478CD8007C45FD /* Wazifa.app */,
+				F91D05C7294B92D4000B7114 /* Ism-e-AzamExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +103,9 @@
 		F90EF14E29478CD8007C45FD /* Wazifa */ = {
 			isa = PBXGroup;
 			children = (
+				F91D05DD294B9C8F000B7114 /* Wazifa.entitlements */,
 				F90EF14F29478CD8007C45FD /* WazifaApp.swift */,
 				F90EF15129478CD8007C45FD /* ContentView.swift */,
-				F90EF15329478CD9007C45FD /* Assets.xcassets */,
 				F90EF15529478CD9007C45FD /* Preview Content */,
 			);
 			path = Wazifa;
@@ -67,6 +119,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F91D05C8294B92D4000B7114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F91D05C9294B92D4000B7114 /* WidgetKit.framework */,
+				F91D05CB294B92D4000B7114 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F91D05CD294B92D4000B7114 /* Ism-e-Azam */ = {
+			isa = PBXGroup;
+			children = (
+				F90EF15329478CD9007C45FD /* Assets.xcassets */,
+				F91D05CE294B92D4000B7114 /* Ism_e_AzamBundle.swift */,
+				F91D05D0294B92D4000B7114 /* Ism_e_Azam.swift */,
+				F91D05D2294B92D6000B7114 /* Assets.xcassets */,
+				F91D05D4294B92D6000B7114 /* Info.plist */,
+			);
+			path = "Ism-e-Azam";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +150,34 @@
 				F90EF14829478CD8007C45FD /* Sources */,
 				F90EF14929478CD8007C45FD /* Frameworks */,
 				F90EF14A29478CD8007C45FD /* Resources */,
+				F91D05D8294B92D6000B7114 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F91D05D6294B92D6000B7114 /* PBXTargetDependency */,
 			);
 			name = Wazifa;
 			productName = Wazifa;
 			productReference = F90EF14C29478CD8007C45FD /* Wazifa.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F91D05C6294B92D4000B7114 /* Ism-e-AzamExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91D05DB294B92D6000B7114 /* Build configuration list for PBXNativeTarget "Ism-e-AzamExtension" */;
+			buildPhases = (
+				F91D05C3294B92D4000B7114 /* Sources */,
+				F91D05C4294B92D4000B7114 /* Frameworks */,
+				F91D05C5294B92D4000B7114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ism-e-AzamExtension";
+			productName = "Ism-e-AzamExtension";
+			productReference = F91D05C7294B92D4000B7114 /* Ism-e-AzamExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,11 +186,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					F90EF14B29478CD8007C45FD = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					F91D05C6294B92D4000B7114 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -116,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				F90EF14B29478CD8007C45FD /* Wazifa */,
+				F91D05C6294B92D4000B7114 /* Ism-e-AzamExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +223,14 @@
 			files = (
 				F90EF15729478CD9007C45FD /* Preview Assets.xcassets in Resources */,
 				F90EF15429478CD9007C45FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91D05C5294B92D4000B7114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D05D3294B92D6000B7114 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F91D05C3294B92D4000B7114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D05D1294B92D4000B7114 /* Ism_e_Azam.swift in Sources */,
+				F91D05CF294B92D4000B7114 /* Ism_e_AzamBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F91D05D6294B92D6000B7114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F91D05C6294B92D4000B7114 /* Ism-e-AzamExtension */;
+			targetProxy = F91D05D5294B92D6000B7114 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F90EF15829478CD9007C45FD /* Debug */ = {
@@ -262,8 +383,10 @@
 		F90EF15B29478CD9007C45FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wazifa/Wazifa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wazifa/Preview Content\"";
@@ -291,8 +414,10 @@
 		F90EF15C29478CD9007C45FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wazifa/Wazifa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wazifa/Preview Content\"";
@@ -317,6 +442,64 @@
 			};
 			name = Release;
 		};
+		F91D05D9294B92D6000B7114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Ism-e-AzamExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E2D87XL9X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ism-e-Azam/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ism-e-Azam";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takasurazeem.Wazifa.Ism-e-Azam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F91D05DA294B92D6000B7114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Ism-e-AzamExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E2D87XL9X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ism-e-Azam/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ism-e-Azam";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takasurazeem.Wazifa.Ism-e-Azam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +517,15 @@
 			buildConfigurations = (
 				F90EF15B29478CD9007C45FD /* Debug */,
 				F90EF15C29478CD9007C45FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91D05DB294B92D6000B7114 /* Build configuration list for PBXNativeTarget "Ism-e-AzamExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91D05D9294B92D6000B7114 /* Debug */,
+				F91D05DA294B92D6000B7114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

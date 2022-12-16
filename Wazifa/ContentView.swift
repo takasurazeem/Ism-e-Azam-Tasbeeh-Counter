@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
-    @AppStorage("fontSize") private var fontSize = 16.0
-    @AppStorage("count") private var count = 0
-    @AppStorage("counterSize") private var counterSize = 15
-    @AppStorage("darkMode") private var darkMode = true
+    private static let store = UserDefaults(suiteName: "group.Ism-e-Azam")
+    @AppStorage("fontSize", store: store) private var fontSize = 16.0
+    @AppStorage("count", store: store) private var count = 0 {
+        didSet {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+    }
+    @AppStorage("counterSize", store: store) private var counterSize = 15 {
+        didSet {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+    }
+    @AppStorage("darkMode", store: store) private var darkMode = true
     @State private var showingConfirmation = false
     @State private var showingConfirmMinus = false
     
@@ -72,7 +82,7 @@ struct ContentView: View {
                     }
             )
             .padding(.horizontal)
-            .navigationTitle("Wazifa")
+            .navigationTitle("اسم اعظم")
             .alert("Are you sure you want to reset the counter?", isPresented: $showingConfirmation) {
                 Button("Yes", role: .destructive) {
                     count = 0
