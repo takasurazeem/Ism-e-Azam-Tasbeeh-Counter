@@ -13,7 +13,7 @@ Above written First Ayat of Surah Aal e Imran is combined with Ya Wahid, Ya Zal 
 #### Light Mode
 <table>
   <tr>
-    <td><img src="screenshots/lightmode/lightmode-1.png" width=100% height=100%></td>
+    <td><img src="https://takasurazeem.github.io/Ism-e-Azam-Tasbeeh-Counter/screenshots/lightmode/lightmode-1.png" width=100% height=100%></td>
     <td><img src="screenshots/lightmode/lightmode-2.png" width=100% height=100%></td>
     <td><img src="screenshots/lightmode/lightmode-3.png" width=100% height=100%></td>
     <td><img src="screenshots/lightmode/lightmode-4.png" width=100% height=100%></td>
